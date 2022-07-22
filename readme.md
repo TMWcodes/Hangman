@@ -3,8 +3,21 @@
 play.rb created
 readme.md created
 bundle init for gemfile
-bundle binstubs rspec-core - just run - bin/rspec
+bundle binstubs rspec-core - just run - bin/rspec -
 bin/rspec --init - to create .rspec & create spec/spec_helper.rb
+test pending with running 'rspec' (amber)
+full test written
+rspec --format documentation
+problem -rspec passing with no expect
+Fixed: successfully wrote failing test (red) - new error - name error: uninitialized constant
+require .rb file with - require ''
+added class to rb file
+new error - NoMethodError
+added method
+new error - ArgumentError
+added argument
+new error 'expected: '' got ''
+Fixed: passing test created
 
 # Build
 
