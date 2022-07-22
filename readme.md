@@ -18,6 +18,7 @@ new error - ArgumentError
 added argument
 new error 'expected: '' got ''
 Fixed: passing test created
+run with: 'ruby lib/filename.rb'
 
 # Build
 
