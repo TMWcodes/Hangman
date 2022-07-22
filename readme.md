@@ -28,3 +28,6 @@ allow the player to make a guess of a letter (case insensitive)
 Update the display to reflect whether the letter was correct or incorrect
 player should also have the option to save the
 add in an option that allows you to open one of your saved games
+
+<!-- References
+https://www.youtube.com/watch?v=ZiaL3F-yjNw&ab_channel=esScreencasts -->
