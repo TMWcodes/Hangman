@@ -36,6 +36,23 @@
 
 - add in an option that allows you to open one of your saved games
 
+## build method
+
+- hangman class
+  - initialize method
+    - inside initialize add the alphabet as an array.
+      .sample() - random element from array.
+  - words method - 2d array of words and clue.
+  - begin method
+    puts prompt and word size.
+    puts clue
+    puts instruction
+    gets guess into variable
+    puts guess
+  - teaser method (shows correct guesses)
+    loop over word size and + "\_"
+- initialize class object and call method
+
 # Development errors
 
 - Mini calculator app for testing

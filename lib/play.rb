@@ -1,9 +1,17 @@
-class Bouncer 
-    def bounce(bouncee)
-        if bouncee == 'it'
-          return true
-        end
-         false
-    end
+
+class Hangman
+
+  def words
+    [
+      ['smile'],
+      ['robot'],
+      ['pedal'],
+      ['candle'],
+      ['tissue']
+      
+    ]
+    
+  end
+ 
 end
 

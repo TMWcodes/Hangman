@@ -1,9 +1,9 @@
 require 'play'
-describe 'Bouncer' do
-    it 'bounces it' do
-        b = Bouncer.new
-        bounced = b.bounce('it')
-        expect(bounced).to be_truthy
+
+describe 'play' do
+    it 'begins game' do
+        hang = Hangman.new
+       
+        expect(hang.words).to include(['smile'])
     end
-    
 end
