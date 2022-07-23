@@ -40,9 +40,9 @@
 
 - hangman class
   - initialize method
-    - inside initialize add the alphabet as an array.
+    - inside initialize add the alphabet as an array. (instance variables)
       .sample() - random element from array.
-  - words method - 2d array of words and clue.
+  - words method - 2d array of words (and clues).
   - begin method
     puts prompt and word size.
     puts clue
@@ -50,7 +50,7 @@
     gets guess into variable
     puts guess
   - teaser method (shows correct guesses)
-    loop over word size and + "\_"
+    loop over word size and add underscores
 - initialize class object and call method
 
 # Development errors
