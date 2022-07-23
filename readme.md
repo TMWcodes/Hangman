@@ -40,7 +40,8 @@
 
 - hangman class
   - initialize method
-    - inside initialize add the alphabet as an array. (instance variables)
+    (instance variables)
+    - inside initialize add the alphabet as an array.
       .sample() - random element from array.
   - words method - 2d array of words (and clues).
   - begin method
