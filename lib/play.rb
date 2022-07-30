@@ -1,5 +1,7 @@
 
 class Hangman
+attr_accessor :word, :lives, :word_teaser
+
   def initialize
     @letters =('a'..'z').to_a
     @word = words.sample
@@ -59,7 +61,7 @@ class Hangman
 
       #check the string being passed in (guess) is in the string (word)
       good_guess = @word.first.include? guess
-
+      # if true, meaning first element of words array includes get.chomp
       if good_guess
         puts "Correct guess"
         puts "you guessed #{guess}"
@@ -95,6 +97,4 @@ class Hangman
 
 
 end
-
-# Hangman.new.begin
 

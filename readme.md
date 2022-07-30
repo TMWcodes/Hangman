@@ -54,7 +54,12 @@
     loop over word size and add underscores
 - initialize class object and call method
 
-# Development errors
+### Gems
+
+gem 'rspec', '~> 3.10'
+gem 'simplecov', '~> 0.21.2'
+
+<!-- # Development errors
 
 - Mini calculator app for testing
 
@@ -74,3 +79,37 @@ calc.calculate(3,'+',3)
 => nil
 
 - fix: due to 'puts' in method
+
+# update_teaser
+irb(main):011:0> hang.update_teaser('r')
+=> "_____"
+word is robot.
+
+adding () to L35 increases spacing with each entry
+new_teaser = @word_teaser.split('')
+
+you guessed s
+s _ _ _ _
+enter a letter
+m
+Correct guess
+you guessed m
+s   _   _   _   _
+
+additionally removing space from line 46 fixed the bug of the letters not updating.
+@word_teaser = new_teaser.join('')
+
+irb(main):> Hangman.new
+=>
+#<Hangman:0x0000013b7f3ffb90
+ @correct_guesses=[],
+ @letters=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"],
+ @lives=5,
+ @word=["robot", "a moving metal object"],
+ @word_teaser="_____">
+
+  -->
+
+<!-- ## notes
+Rspec
+to access instance variables use attr accessors - instance varibles as symbols -->
