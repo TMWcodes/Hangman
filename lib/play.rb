@@ -74,9 +74,14 @@ attr_accessor :word, :lives, :word_teaser, :letters, :correct_guesses, :incorrec
 
         # remove correct guess from alphabet
         @letters.delete guess
-        teaser guess
-        make_guess
-        
+
+        teaser guess 
+
+        if @word[0] == @word_teaser
+          puts "congrats"
+        else
+          make_guess
+        end
         
       else
         # remove one life if guess is wrong
