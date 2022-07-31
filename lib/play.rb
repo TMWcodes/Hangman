@@ -1,12 +1,13 @@
 
 class Hangman
-attr_accessor :word, :lives, :word_teaser
+attr_accessor :word, :lives, :word_teaser, :letters, :correct_guesses, :incorrect_guesses
 
   def initialize
     @letters =('a'..'z').to_a
     @word = words.sample
     @lives = 5
     @correct_guesses = []
+    @incorrect_guesses = []
 
     @word_teaser = ""
     @word.first.length.times do
@@ -62,7 +63,9 @@ attr_accessor :word, :lives, :word_teaser
       #check the string being passed in (guess) is in the string (word)
       good_guess = @word.first.include? guess
       # if true, meaning first element of words array includes get.chomp
-      if good_guess
+      if guess == "exit"
+        puts "thanks for playing"
+      elsif good_guess
         puts "Correct guess"
         puts "you guessed #{guess}"
 
@@ -80,6 +83,8 @@ attr_accessor :word, :lives, :word_teaser
         @lives -= 1
         puts "wrong you have #{@lives} lives left. try again!"
         puts "you guessed #{guess}"
+        @letters.delete guess
+        @incorrect_guesses << guess
         make_guess
       end
      
@@ -90,6 +95,7 @@ attr_accessor :word, :lives, :word_teaser
 
   def begin 
     puts "Game has started"
+    puts "escape with exit"
     puts hint
     puts teaser
     puts make_guess

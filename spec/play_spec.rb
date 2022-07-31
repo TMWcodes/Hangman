@@ -40,6 +40,8 @@ describe 'play' do
         end
         expect(lives).to eq(4)
     end
+    it 'deletes guessed letters' 
+        
+    it 'can end the game' 
     
-   
 end

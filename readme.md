@@ -18,11 +18,11 @@
 1. added argument
 1. new error 'expected: '' got ''
 1. Fixed: passing test created
+1. add simplecov gem
 
 - run with: 'ruby lib/filename.rb'
-- created mini calculator app for testing
 
-# Build
+# Build requirements
 
 - select a word between 5 and 12 characters.
 
@@ -32,11 +32,13 @@
 
 - Update the display to reflect whether the letter was correct or incorrect
 
+- player should have the option to quit the game
+
 - player should also have the option to save the game
 
 - add in an option that allows you to open one of your saved games
 
-## build method
+## Build method
 
 - hangman class
   - initialize method
@@ -57,10 +59,20 @@
 ### Gems
 
 gem 'rspec', '~> 3.10'
+
 gem 'simplecov', '~> 0.21.2'
 
-<!-- # Development errors
+# References
 
+comments
+
+<!-- > www.youtube.com. (n.d.). How to Use Attribute Accessors in Ruby. [online] Available at: https://www.youtube.com/watch?v=C4O7bcbItw4&t=1s&ab_channel=JesusCastello [Accessed 30 Jul. 2022]. -->
+
+## Development troubleshooting
+
+comments
+
+<!--
 - Mini calculator app for testing
 
 - rspec expects floating number but gets nil
@@ -110,6 +122,65 @@ irb(main):> Hangman.new
 
   -->
 
-<!-- ## notes
-Rspec
+**removing letters from alphabet**
+irb
+require './lib/play.rb'
+
+hang = Hangman.new
+
+hang.begin
+
+enter a letter
+
+a
+
+wrong
+
+enter a letter
+
+r
+
+Correct
+
+r\_\_\_\_
+
+enter a letter
+
+o
+
+Correct
+
+ro*o*
+
+enter a letter
+
+b
+
+Correct guess
+
+you guessed b
+
+robo\_
+
+enter a letter
+
+exit
+
+hang
+=>
+
+```Hangman:0x000001c4642fae20
+ @correct_guesses=["r", "o", "b"],
+ @incorrect_guesses=["a"],
+ @letters=["c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "p", "q", "s", "t", "u", "v", "w", "x", "y", "z"],
+ @lives=4,
+ @word=["robot", "a moving metal object"],
+ @word_teaser="robo_">
+```
+
+### notes
+
+comments
+
+<!-- Rspec
 to access instance variables use attr accessors - instance varibles as symbols -->
